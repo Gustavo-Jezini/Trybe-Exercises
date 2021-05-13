@@ -1,0 +1,28 @@
+#change-size {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+#paragrafo {
+    font-weight: 600;
+    font-size: 2em;
+    font-style: italic;
+    line-height: 0;
+    text-align: center;
+    text-decoration: dashed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+#vemelho {
+    background-color: red;
+}
+#amarelo {
+    background-color: yellow;
+}
+#marrom {
+    background-color: brown;
+}
