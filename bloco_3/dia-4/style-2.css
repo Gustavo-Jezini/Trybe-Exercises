@@ -1,0 +1,50 @@
+
+
+
+
+
+.links-navegacao li {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.artigo {
+  border: solid black;
+  width: 70%;
+  float: left;
+
+}
+
+.titulo {
+  text-align: center;
+  text-decoration: underline;
+  color: #1B3022;
+}
+
+.identidade {
+  border: solid yellow;
+  overflow: scroll;
+  height: 200px;
+}
+
+.fatos-legais {
+  overflow: scroll;
+  height: 200px;
+}
+
+.lateral {
+  border: solid black;
+  float: right;
+  width: 28%;
+  height: 50%;
+}
+
+.corpo {
+  width: auto;
+  height: 600px;
+  border: solid green;
+  display: block;
+}
+
+
