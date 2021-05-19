@@ -26,14 +26,18 @@
 //   console.log("operacao invalida")
 // }
 
-let x = 10
-let y = 11
+let x = 14
+let y = 14
+let z = 14
 
-if (x > y) {
+if (x > y && z) {
   console.log(x)
 }
-else if (y > x) {
+else if (y > z && x) {
   console.log(y)
+}
+else if (z > y && x) {
+  console.log(z)
 }
 else {
   console.log("sao iguais")
