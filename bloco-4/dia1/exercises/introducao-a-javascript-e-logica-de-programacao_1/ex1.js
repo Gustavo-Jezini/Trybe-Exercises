@@ -55,26 +55,37 @@
 //   console.log("zero")
 // }
 
-let k = 60
-let p = 60
-let q = 60
-let soma = k + q+ p
+// let k = 60
+// let p = 60
+// let q = 60
+// let soma = k + q+ p
 
 
 
-if(soma==180) {
+// if(soma==180) {
+//   console.log(true)
+// }
+
+// else if(q<0 || p<0 || k<0){
+//   console.log("O valor do angulo deve ser positivo")
+// }
+
+
+// else if(soma!=180) {
+//   console.log(false)
+// }
+
+// else {
+//   console.log("wtf")
+// }
+
+let a = 3
+let b = 7
+let c = 5
+
+if (a%2==0 || b%2==0 || c%2==0) {
   console.log(true)
 }
-
-else if(q<0 || p<0 || k<0){
-  console.log("O valor do angulo deve ser positivo")
-}
-
-
-else if(soma!=180) {
-  console.log(false)
-}
-
 else {
-  console.log("wtf")
+  console.log(false)
 }
