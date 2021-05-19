@@ -26,19 +26,31 @@
 //   console.log("operacao invalida")
 // }
 
-let x = 14
-let y = 14
-let z = 14
+// let x = 14
+// let y = 14
+// let z = 14
 
-if (x > y && z) {
-  console.log(x)
+// if (x > y && z) {
+//   console.log(x)
+// }
+// else if (y > z && x) {
+//   console.log(y)
+// }
+// else if (z > y && x) {
+//   console.log(z)
+// }
+// else {
+//   console.log("sao iguais")
+// }
+
+let number = 10.2
+
+if (number > 0) {
+  console.log("positive")
 }
-else if (y > z && x) {
-  console.log(y)
-}
-else if (z > y && x) {
-  console.log(z)
+else if (number < 0) {
+  console.log("negative")
 }
 else {
-  console.log("sao iguais")
+  console.log("zero")
 }
