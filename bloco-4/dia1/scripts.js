@@ -27,13 +27,32 @@
 // let perimetro = base*2 + altura*2;
 // console.log(perimetro)
 
-let nota = 72
-if (nota >=80) {
-  console.log("Aprovado")
-}
-else if (nota >=60 && nota <80) {
-  console.log("Voce esta na lista de espera")
-}
-else {
-  console.log("Reprovado")
-}
+// let nota = 72
+// if (nota >=80) {
+//   console.log("Aprovado")
+// }
+// else if (nota >=60 && nota <80) {
+//   console.log("Voce esta na lista de espera")
+// }
+// else {
+//   console.log("Reprovado")
+// }
+
+let pessoa = "repro"
+switch (pessoa) {
+  case "aprovada":
+    console.log("Parabens , voce foi aprovado!!");
+    break;
+
+  case "lista":
+    console.log("Voce esta na lista de espera");
+    break;
+
+  case "reprovada":
+    console.log("Voce reprovou , tente novamente mes que vem!");
+    break;
+
+  default :
+    console.log("wtf?!");
+    break;
+  }
