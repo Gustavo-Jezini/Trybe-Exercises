@@ -43,14 +43,43 @@
 //   console.log("sao iguais")
 // }
 
-let number = 10.2
+// let number = 10.2
 
-if (number > 0) {
-  console.log("positive")
+// if (number > 0) {
+//   console.log("positive")
+// }
+// else if (number < 0) {
+//   console.log("negative")
+// }
+// else {
+//   console.log("zero")
+// }
+
+let k = 50
+let p = 60
+let q = 60
+let soma = k + q+ p
+
+
+
+if(soma==180) {
+  console.log(true)
 }
-else if (number < 0) {
-  console.log("negative")
+
+else if(q<0){
+  console.log("O valor do angulo deve ser positivo")
 }
+else if(k<0){
+  console.log("O valor do angulo deve ser positivo")
+}
+else if(p<0){
+  console.log("O valor do angulo deve ser positivo")
+}
+
+else if(soma!=180) {
+  console.log(false)
+}
+
 else {
-  console.log("zero")
+  console.log("wtf")
 }
