@@ -20,9 +20,20 @@
 // console.log(typeof patientEmail)
 // console.log(typeof patientAge)
 
-let base = 5;
-let altura = 8;
-let area = base*altura;
-console.log(area)
-let perimetro = base*2 + altura*2;
-console.log(perimetro)
+// let base = 5;
+// let altura = 8;
+// let area = base*altura;
+// console.log(area)
+// let perimetro = base*2 + altura*2;
+// console.log(perimetro)
+
+let nota = 72
+if (nota >=80) {
+  console.log("Aprovado")
+}
+else if (nota >=60 && nota <80) {
+  console.log("Voce esta na lista de espera")
+}
+else {
+  console.log("Reprovado")
+}
