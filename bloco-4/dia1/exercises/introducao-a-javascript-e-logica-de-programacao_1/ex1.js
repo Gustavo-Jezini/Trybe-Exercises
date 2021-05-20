@@ -90,13 +90,27 @@
 //   console.log(false)
 // }
 
-let a = 3
-let b = 4
-let c = 5
+// let a = 3
+// let b = 4
+// let c = 5
 
-if (a%2==1 || b%2==1 || c%2==1) {
-  console.log(true)
+// if (a%2==1 || b%2==1 || c%2==1) {
+//   console.log(true)
+// }
+// else {
+//   console.log(false)
+// }
+
+let valorCusto = -200;
+let valorDeVenda = 300;
+
+let valorCustoTotal = valorCusto*1.2
+let lucro = valorDeVenda - valorCustoTotal
+
+switch(valorCusto<0) {
+  case <0 :
+    console.log("Erro : valor de custo deve ser maior que zero");
+    break;
 }
-else {
-  console.log(false)
-}
+
+console.log(lucro*1000)
