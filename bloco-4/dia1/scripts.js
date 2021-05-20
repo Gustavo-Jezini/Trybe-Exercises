@@ -1,0 +1,58 @@
+//   let name = "Gustavo Jezini"
+//   const birthCity = "Sao Jose dos Campos"
+//   let birthYear = 2001
+//   console.log(name)
+//   birthCity = "oitra"
+//   console.log(birthCity)
+//   birthYear = 2030
+//   console.log(birthYear)
+
+// let patientId = 50;
+// let isEnrolled = true;
+// const patientInfo = {
+//   firstName: 'Ana',
+//   lastName: 'Santos',
+// };
+// const patientEmail = 'ana@email.com';
+// console.log(typeof patientId)
+// console.log(typeof isEnrolled)
+// console.log(typeof patientInfo)
+// console.log(typeof patientEmail)
+// console.log(typeof patientAge)
+
+// let base = 5;
+// let altura = 8;
+// let area = base*altura;
+// console.log(area)
+// let perimetro = base*2 + altura*2;
+// console.log(perimetro)
+
+// let nota = 72
+// if (nota >=80) {
+//   console.log("Aprovado")
+// }
+// else if (nota >=60 && nota <80) {
+//   console.log("Voce esta na lista de espera")
+// }
+// else {
+//   console.log("Reprovado")
+// }
+
+let pessoa = "repro"
+switch (pessoa) {
+  case "aprovada":
+    console.log("Parabens , voce foi aprovado!!");
+    break;
+
+  case "lista":
+    console.log("Voce esta na lista de espera");
+    break;
+
+  case "reprovada":
+    console.log("Voce reprovou , tente novamente mes que vem!");
+    break;
+
+  default :
+    console.log("wtf?!");
+    break;
+  }
