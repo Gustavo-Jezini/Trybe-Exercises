@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script>
+      document.getElementsByTagName("body")[0].id = "corpo";
+      let titulo = document.createElement("h1");
+      titulo.innerText = "Exercício 5.2 - JavaScript DOM "
+      document.getElementById("corpo").appendChild(titulo)
+      let div = document.createElement("div")
+      div.className = "main-content"
+      document.getElementById("corpo").appendChild(div);
+      let divFilha = document.createElement("div");
+      divFilha.className = "center-content";
+      document.getElementsByClassName("main-content")[0].appendChild(divFilha);
+      let paragraph = document.createElement("p");
+      paragraph.innerText = "algum texto";
+      document.getElementsByClassName("center-content")[0].appendChild(paragraph);
+      let divSegundaFilha = document.createElement("div");
+      divSegundaFilha.className = "left-content";
+      document.getElementsByClassName("main-content")[0].appendChild(divSegundaFilha);
+      let divTerceiraFilha = document.createElement("div");
+      divTerceiraFilha.className = "right-content";
+      document.getElementsByClassName("main-content")[0].appendChild(divTerceiraFilha);
+      let image = document.createElement("img");
+      image.src = "https://picsum.photos/200"
+      image.className = "small-image"
+      document.getElementsByClassName("left-content")[0].appendChild(image)
+      let list = document.createElement("ul");
+      list.id = "listaDesordenada";
+      document.getElementsByClassName("right-content")[0].appendChild(list)
+      let numeros = 0
+      for(let i = 1 ; i <= 10; i += 1){
+        numeros += 1
+        console.log(numeros)
+        let listItem = document.createElement("li");
+        listItem.innerText = numeros;
+        list.appendChild(listItem);
+      }
+      titulo.className = "title"
+      document.getElementsByClassName("main-content")[0].removeChild(divSegundaFilha);
+      divTerceiraFilha.style.marginRight = "auto";
+      document.getElementsByClassName("center-content")[0].parentElement.style.backgroundColor = "green";
+      list.removeChild(document.getElementsByTagName("li")[9]);
+      list.removeChild(document.getElementsByTagName("li")[8]);
+    </script>
+  </body>
+</html> 
