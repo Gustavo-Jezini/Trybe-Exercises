@@ -4,7 +4,6 @@ const divTres = document.getElementById('divTres');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('mySpotrybefy');
 
-
 /*
  Copie esse arquivo e edite apenas ele;
  Crie uma função que adicione a classe 'tech' ao elemento selecionado;
@@ -20,28 +19,31 @@ a cor do mesmo;
 Segue abaixo um exemplo do uso de event.target:
 */
 
-const tecnologia = document.getElementsByClassName("tech")[0];
-
-tecnologia.addEventListener("click" ,changeText);
-
-function changeText(clickEvent) {
-
-  clickEvent.target.innerText = "alterei o texto?";
-};
-
-myWebpage.addEventListener("dblclick" ,redireciona);
-
-myWebpage.addEventListener('mouseover' ,changeColor)
-
-function changeColor (mouseOver) {
-
-  mouseOver.target.style.color = "red"
+function removeAndCreate(elementoSelecionado){
+  let arrayTech = document.getElementsByClassName("tech");
+  for( i = 0; i < arrayTech.length; i += 1){
+    document.getElementsByClassName("container")[0].removeChild(arrayTech[i])
+  }
+  // let tecno = document.createElement("div");
+  elementoSelecionado.className = "tech";
+  // document.getElementsByClassName("container")[0].appendChild(tecno);
 }
+removeAndCreate(document.getElementById("divDois"));
 
-function redireciona () {
+let textBox = document.getElementById("input");
+textBox.addEventListener("keyup" ,function textChanger(string){
+  let divTech = document.getElementsByClassName("tech")[0];
+  string = textBox;
+  divTech.innerHTML = textBox.value;
+});
 
-  window.location.href = "https://gustavo-jezini.github.io/"
-};
+myWebpage.addEventListener("dblclick" , function redirect() {
+  window.location.href = "https://www.youtube.com/watch?v=6cOsxaNC06c"
+})
+
+myWebpage.addEventListener("mouseover" ,function changeColor() {
+  myWebpage.style.color = "red"
+})
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
