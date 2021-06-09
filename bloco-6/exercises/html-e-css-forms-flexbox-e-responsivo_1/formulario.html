@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio-formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="GET">
+    <fieldset>
+      <label for="name">Nome
+        <input type="text" name="name" id="name" maxlength="40" required>
+      </label>
+      <br>
+      <label for="email">Email
+        <input type="text" name="email" id="email" maxlength="50" required>
+      </label>
+      <br>
+      <label for="cpf">CPF
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      </label>
+      <br>
+      <label for="city">Cidade
+        <input type="text" name="city" id="city" maxlength="200" required>
+      </label>
+      <br>
+      <label for="state">Estado
+        <select name="state" id="state" required></select>
+      </label>
+      <br>
+      <label for="ap">
+        <input type="radio" name="home" id="ap" required>apartamento
+      </label>
+      <label for="casa">  
+        <input type="radio" name="home" id="casa" required>casa
+      </label>
+    </fieldset>
+    <fieldset>
+      <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" required>Deixe sei curriculo aqui</textarea>
+      <br>
+      <label for="cargo">Cargo
+        <input type="text" name="cargo" id="cargo" required>
+      </label>
+      <br>
+      <textarea name="description" id="description" cols="30" rows="10" maxlength="500" required>Descricacao do cargo</textarea>
+      <br>
+      <label for="date">
+        <input type="date" name="date" id="date" required>
+      </label>
+    </fieldset>
+    <input type="reset">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
