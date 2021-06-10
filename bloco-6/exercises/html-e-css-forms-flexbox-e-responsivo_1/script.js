@@ -32,3 +32,4 @@ let listOfStates = ["Acre",
     option.innerText = listOfStates[i];
     statesOptions.appendChild(option);
   }
+  

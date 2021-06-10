@@ -5,53 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercicio-formulario</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+  <script src="js/just-validate.min.js"></script>
 </head>
 <body>
-  <form action="" method="GET">
+  <h1 class="display-4 muted">Exercicio-formulario</h1>
+  <form action="" method="GET" class="container-fluid">
     <fieldset>
-      <label for="name">Nome
-        <input type="text" name="name" id="name" maxlength="40" required>
-      </label>
-      <br>
-      <label for="email">Email
-        <input type="text" name="email" id="email" maxlength="50" required>
-      </label>
-      <br>
-      <label for="cpf">CPF
-        <input type="text" name="cpf" id="cpf" maxlength="11" required>
-      </label>
-      <br>
-      <label for="city">Cidade
-        <input type="text" name="city" id="city" maxlength="200" required>
-      </label>
-      <br>
-      <label for="state">Estado
-        <select name="state" id="state" required></select>
-      </label>
-      <br>
-      <label for="ap">
-        <input type="radio" name="home" id="ap" required>apartamento
-      </label>
-      <label for="casa">  
-        <input type="radio" name="home" id="casa" required>casa
-      </label>
-    </fieldset>
-    <fieldset>
-      <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" required>Deixe sei curriculo aqui</textarea>
-      <br>
-      <label for="cargo">Cargo
-        <input type="text" name="cargo" id="cargo" required>
-      </label>
-      <br>
-      <textarea name="description" id="description" cols="30" rows="10" maxlength="500" required>Descricacao do cargo</textarea>
-      <br>
-      <label for="date">
-        <input type="date" name="date" id="date" required>
-      </label>
-    </fieldset>
-    <input type="reset">
+      <div class="form-group">
+        <label class="form-control" for="name">Nome</label>
+          <input type="text" name="name" id="name" maxlength="40" required>
+      </div>
+      <div class="form-group">
+        <label class="form-control" for="email">Email</label>
+          <input type="text" name="email" id="email" maxlength="50" required>
+      </div>
+        <label class="form-control" for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      <div class="form-group">
+        <label class="form-control" for="city">Cidade</label>
+          <input type="text" name="city" id="city" maxlength="200" required>
+      </div class="form-group">
+      <div class="form-group">
+        <label class="form-control" for="state">Estado</label>
+          <select name="state" id="state" class="form-control" required></select>
+      </div>
+        <label class="form-control" for="ap"></label>
+          <input type="radio" name="home" id="ap" required>apartamento
+        <div class="form-group">
+        <label class="form-control" for="casa">  </label>
+          <input type="radio" name="home" id="casa" required>casa
+      </div>
+      </fieldset>
+      <fieldset>
+      <div class="form-group">
+        <textarea name="resume" class="form-control" id="resume" cols="30" rows="10" maxlength="1000" required>Deixe sei curriculo aqui</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-control" for="cargo">Cargo</label>
+          <input type="text" name="cargo" id="cargo" required>
+      </div>
+      <div class="form-group">
+        <textarea name="description" class="form-control" id="description" cols="30" rows="10" maxlength="500" required>Descricacao do cargo</textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-control" for="date"></label>
+          <input type="date" name="date" id="date" required>
+      </div>  
+      </fieldset>
+      <input type="reset">
+      <button class="btn btn-sucess" type="submit">Enviar curriculo</button>
   </form>
-  <script src="script.js"></script>
+  <script src="scriptStyle.js"></script>
 </body>
 </html>
