@@ -42,3 +42,37 @@ html {
   }
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    background-color: burlywood;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: xx-large;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header li {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  aside {
+    margin-left: 75px;
+  }
+
+  article {
+    max-width: 70%;
+    margin: 50px auto;
+  }
+
+  footer {
+    max-width: 60%;
+    margin: auto;
+  }
+}
