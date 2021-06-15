@@ -76,3 +76,43 @@ html {
     margin: auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: brown;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header li {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  aside {
+    margin-left: 40px;
+    font-size: smaller;
+  }
+
+  aside li {
+    font-size: 15px;
+  }
+
+  article {
+    max-width: 70%;
+    margin: 50px auto;
+  }
+
+  footer {
+    max-width: 60%;
+    margin: auto;
+  }
+}
