@@ -1,0 +1,57 @@
+ 
+@media screen and (max-width: 680px) {
+  body {
+    background-color: brown;
+  }
+  h1 {
+    font-size: xx-large
+    ;
+  }
+  h2 {
+    font-size: x-large;
+  }
+
+  img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 30px;
+  }
+
+  p {
+    max-width: 80%;
+    margin-left: 10px;
+  }
+
+  figure {
+      margin: 0;
+  }}
+
+  @media screen and (max-width: 400px) {
+    body {
+      background-color: aqua;
+    }
+
+    h1 {
+      font-size: x-large
+      ;
+    }
+    h2 {
+      font-size:large;
+    }
+  
+    img {
+        width: 175px;
+        height: 175px;
+        margin-bottom: 30px;
+    }
+  
+    p {
+      max-width: 80%;
+      margin-left: 10px;
+    }
+  
+    figure {
+        margin: 0;
+    }
+
+  }
