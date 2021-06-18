@@ -29,4 +29,11 @@ const keyList = object => {
   Object.keys(object);
 };
 
+const objLength = obj => Object.keys(obj).length;
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+const contaEstudante = lessons => (lessons.lesson1.numeroEstudantes + lessons.lesson2.numeroEstudantes + lessons.lesson3.numeroEstudantes);
+
+
 
