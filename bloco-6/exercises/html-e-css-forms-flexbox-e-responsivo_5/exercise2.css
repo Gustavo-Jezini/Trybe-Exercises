@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 801px) {
+
+  body {
+    background-color: green;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: xx-large;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header li {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  aside {
+    margin-left: 100px;
+  }
+
+  article {
+    max-width: 75%;
+    margin: 50px auto;
+  }
+
+  footer {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: burlywood;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: xx-large;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header li {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  aside {
+    margin-left: 75px;
+  }
+
+  article {
+    max-width: 70%;
+    margin: 50px auto;
+  }
+
+  footer {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: brown;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header li {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  aside {
+    margin-left: 40px;
+    font-size: smaller;
+  }
+
+  aside li {
+    font-size: 15px;
+  }
+
+  article {
+    max-width: 70%;
+    margin: 50px auto;
+  }
+
+  footer {
+    max-width: 60%;
+    margin: auto;
+  }
+}

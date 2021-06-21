@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+          const testingScope = (escopo) => {
+        if (escopo === true) {
+          let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
+          ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
+          console.log(ifScope);
+        } else {
+          const elseScope = `Não devo ser utilizada fora meu escopo (else)`;
+          console.log(elseScope);
+        }
+        // console.log(ifScope + ' o que estou fazendo aqui ? :O'); // Se necessário esta linha pode ser removida.
+      }
+
+      testingScope(false);
+  </script>
+</body>
+</html>
