@@ -12,6 +12,4 @@ function myRemove(arr, item) {
 
 // implemente seus testes aqui
 
-assert.strictEqual(myRemove([1, 2, 3, 4], 5), [ 1, 2, 3, 4 ])
-
-console.log(Object.values([ 1, 2, 4 ]));
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [ 1, 2, 3 ])
