@@ -64,10 +64,11 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+const expectedResult = false;
 
-function authorBornIn1947() {
-  // escreva aqui o seu código
-  return books.find((pessoa) => pessoa.author.birthYear === 1947).author.name;
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((idade) => idade.author.birthYear > 1900);
 }
 
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
