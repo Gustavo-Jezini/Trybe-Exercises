@@ -1,0 +1,19 @@
+{
+  "script": {
+    "test": "jest"
+  },
+  "name": "aula10.1",
+  "version": "1.0.0",
+  "main": "ex1.js",
+  "dependencies": {
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
