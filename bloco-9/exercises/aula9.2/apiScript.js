@@ -26,7 +26,9 @@ const fetchPromise = () => {
     sum = arr.map((number) => number * number)
     .reduce((sum, acc) => sum + acc,0);
     sum < 8000 ? resolve(sum) : reject();
-  })
+  });
+  
+  myPromise
   .then((sum) => divisor.map((value) => sum / value))
   .then((newSum) => console.log(newSum.reduce((acc, curr) => acc + curr, 0)))
   .catch(() => console.log(`Impossivel!! A soma é mais de 8 mil!!`))
