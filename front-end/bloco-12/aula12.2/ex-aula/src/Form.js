@@ -1,5 +1,7 @@
 import React from 'react';
+import Input1 from './input1';
 import './App.css';
+import Options from './options';
 
 class Form extends React.Component {
     constructor() {
@@ -29,17 +31,11 @@ class Form extends React.Component {
               <legend>Formulario Basicao</legend>
                 <label className='labels'>
                     Aqui vem o 'select'
-                    <select name='options' onChange={this.changeComponent}>
-                        <option>Opcao 1</option>
-                        <option>Opcao 2</option>
-                        <option>Opcao 3</option>
-                        <option>Opcao 4</option>
-                    </select>
+                    <Options changeComponent={this.changeComponent} />
                 </label>
-                <label className='labels'>
-                    Aqui ficará o primeiro input
-                    <input name='input1' type='text' onChange={this.changeComponent}></input>
-                </label>
+
+                <Input1 valor={this.state.input1} func={this.changeComponent} />
+
                 <label className='labels'>
                     segundo input
                     <input name='input2' type='checkbox' onClick={this.changeComponent}></input>
