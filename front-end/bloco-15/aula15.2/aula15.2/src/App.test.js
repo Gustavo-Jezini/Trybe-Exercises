@@ -25,7 +25,6 @@ it('fetch joke', async () => {
   )
 
 
-
   const {findByText} = render(<App />)
   await findByText('Whiteboards ... are remarkable.');
   expect(global.fetch).toBeCalledTimes(1);
