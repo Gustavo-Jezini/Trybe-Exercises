@@ -1,0 +1,5 @@
+SELECT * FROM hr.employees
+WHERE FIRST_NAME LIKE '________%';
+
+SELECT * FROM hr.employees
+WHERE CHAR_LENGTH(FIRST_NAME) >= 8;
