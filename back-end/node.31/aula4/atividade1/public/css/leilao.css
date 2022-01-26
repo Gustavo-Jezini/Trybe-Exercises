@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: inline;
+  text-align: center;
+  justify-content: space-between;
+}
